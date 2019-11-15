@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>new_topic</title>
+</head>
+<body>
+    <p>
+        Add a new topic:
+    </p>
+
+    <form action="new_topic.html" method="post">
+        {% csrf_token %}
+        {{ form.as_table }}
+        <button name="submit">add topic</button>
+    </form>
+
+</body>
+</html>
